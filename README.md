@@ -40,12 +40,10 @@ python test_3D.py
 
 If you find this paper useful, please cite as:
 ```
-@article{xu2023ambiguity,
-  title={Ambiguity-selective consistency regularization for mean-teacher semi-supervised medical image segmentation},
-  author={Xu, Zhe and Wang, Yixin and Lu, Donghuan and Luo, Xiangde and Yan, Jiangpeng and Zheng, Yefeng and Tong, Raymond Kai-yu},
-  journal={Medical Image Analysis},
-  pages={102880},
-  year={2023},
-  publisher={Elsevier}
+@article{xu2024FMABS,
+  title={FM-ABS: Promptable Foundation Model Drives Active Barely Supervised Learning for 3D Medical Image Segmentation},
+  author={Xu, Zhe and Chen, Cheng and Lu, Donghuan and Sun, Jinghan and Wei, Dong and Zheng, Yefeng and Li, Quanzheng and Tong, Raymond Kai-yu},
+  journal={Medical Image Computing and Computer Assisted Intervention (MICCAI)},
+  year={2024}
 }
 ```
