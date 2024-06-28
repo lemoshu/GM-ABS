@@ -3,6 +3,8 @@
 
 This repository will hold the PyTorch implementation of the paper [MICCAI24](). 
 
+Under construction. The entire project will be released upon the journal extension acceptance.
+
 ## Introduction
 ### Abstract
 Placeholder
