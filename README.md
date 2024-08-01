@@ -1,7 +1,7 @@
 # FM-ABS
 
 
-This repository will hold the PyTorch implementation of the paper [MICCAI24](). 
+This repository will hold the PyTorch implementation of the MICCAI'24 paper [FM-ABS: Promptable Foundation Model Drives Active Barely Supervised Learning for 3D Medical Image Segmentation]() and the journal extension [Journal](). 
 
 Under construction. The entire project will be released upon the journal extension acceptance.
 
@@ -28,7 +28,7 @@ Refer to ./data for details
 3. Train
 ```
 cd ./code
-python train_ACMT_{}_3D.py --labeled_num {} --gpu 0
+python train_FMABS_{}_3D.py --labeled_num {} --gpu 0
 ```
 
 4. Test 
