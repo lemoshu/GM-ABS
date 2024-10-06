@@ -3,7 +3,7 @@
 
 This repository will hold the PyTorch implementation of the MICCAI'24 paper [FM-ABS: Promptable Foundation Model Drives Active Barely Supervised Learning for 3D Medical Image Segmentation]() and the journal extension [Journal](). 
 
-Under construction. The entire project will be released upon the journal extension acceptance.
+[Note] Under construction. The entire project will be released upon the journal extension acceptance.
 
 ## Introduction
 ### Abstract
@@ -18,7 +18,7 @@ Check requirements.txt.
 
 1. Clone the repo:
 ```
-cd ./AC-MT
+cd ./FM-ABS
 ```
 
 2. Data Preparation
