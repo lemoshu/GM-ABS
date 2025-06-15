@@ -1,7 +1,7 @@
 """
 [TMI Submission] GM-ABS for 3D LA segmentation
 
-python train_final_GMABS_LA_release.py --labeled_num 4 --budget 16 --active_type uncerper_div --gpu 2 --label_strategy majority --exp LA_GMABS_HERD_release --add_point 2
+python train_final_GMABS_LA_public.py --labeled_num 4 --budget 16 --active_type uncerper_div --gpu 0 --label_strategy majority --exp LA_GMABS_HERD_release --add_point 2
 """
 
 import argparse
