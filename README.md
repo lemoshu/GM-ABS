@@ -38,8 +38,6 @@ Ensure CUDA compatibility with your system.
   - [MobileSAM weights](https://github.com/ChaoningZhang/MobileSAM/tree/master/weights)
   - [MedSAM / LiteMedSAM](https://drive.google.com/drive/folders/1ETWmi4AiniJeWOt6HAsYgTjYv_fkgzoN)
 
----
-
 
 2. Train
 ```
@@ -70,5 +68,4 @@ If you find this work helpful, please cite us:
   booktitle={Medical Image Computing and Computer Assisted Intervention (MICCAI)},
   year={2024}
 }
-
 ```
