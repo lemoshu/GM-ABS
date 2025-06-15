@@ -106,8 +106,7 @@ def train(args, snapshot_path):
             # Supervised loss for labeled slices
             loss_ce = losses_sparse.CE_Mask_loss(outputs, cross_label[:], indicator[:], 
                                                  batch_size=args.batch_size, H=patch_size[0], W=patch_size[1], D=patch_size[2])
-            loss_dice = losses_sparse.binary_dice_loss_mask(outputs_soft, cross_label.unsqueeze(1), indicator.unsqueeze(1))
-            supervised_loss = 0.5 * (loss_ce + loss_dice)
+            supervised_loss = loss_ce
 
             loss = supervised_loss
             optimizer.zero_grad()
