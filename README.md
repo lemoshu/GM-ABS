@@ -15,6 +15,8 @@ To this end, we propose **GM-ABS**: a **Generalist Model-driven Active Barely Su
 Extensive experiments on three benchmark datasets show that GM-ABS consistently outperforms recent SSL baselines under extremely limited labeling resources.
 
 ## :hammer: Requirements
+Set up the conda environment.
+
 Please refer to `requirements.txt`. Key dependencies include:
 
 - `torch==1.10.1+cu113`
@@ -30,10 +32,10 @@ Ensure CUDA compatibility with your system.
 - ☐ Multi-dataset coverage
 
 
-## :computer: Getting Started
+## :computer: Instruction
 
 1. Preparation
-- **Cross-labeling setup**: See [`./dataloaders/cross_labeling.py`](./dataloaders/cross_labeling.py) for details.
+- **Cross-labeling setup**: See [`./dataloaders/cross_labeling.py`](./code_GMABS/dataloaders/cross_labeling.py) for details.
 - **Generalist model weights**: Place pre-trained generalist models in `./sam_weights/`. Examples:
   - [MobileSAM weights](https://github.com/ChaoningZhang/MobileSAM/tree/master/weights)
   - [MedSAM / LiteMedSAM](https://drive.google.com/drive/folders/1ETWmi4AiniJeWOt6HAsYgTjYv_fkgzoN)
@@ -41,15 +43,16 @@ Ensure CUDA compatibility with your system.
 
 2. Train
 ```
-python train_final_GMABS_LA_release.py \
+python train_final_GMABS_LA_public.py \
     --labeled_num 4 \
     --budget 16 \
     --active_type uncerper_div \
     --gpu 0 \
     --label_strategy majority \
-    --exp LA_GMABS_HERD_release \
+    --exp LA_GMABS_HERD \
     --add_point 2
 ```
+
 
 3. Test 
 ```
