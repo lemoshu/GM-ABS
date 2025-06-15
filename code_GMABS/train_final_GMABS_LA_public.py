@@ -506,14 +506,12 @@ def train(args, snapshot_path):
 
                 del prob_train_list, name_list, label_pred_list            
                                           
-
                 # update the batch sampler
                 batch_sampler = TwoStreamBatchSampler(
                     labeled_idxs, unlabeled_idxs, batch_size, batch_size-args.labeled_bs)
                 trainloader = DataLoader(db_train, batch_sampler=batch_sampler,
                                             num_workers=4, pin_memory=True, worker_init_fn=worker_init_fn)
                 model.train()
-
 
 
             logging.info(
