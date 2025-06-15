@@ -178,6 +178,7 @@ def adjust_biasfield_3d_image(image):
         image[i] = random_biasfield(single_image)
     return torch.from_numpy(image).to(device)
 
+
 def MTCL_label_denoise(pred_prob_tensor, noisy_label_tensor, class_num=2, patch_size=[112, 112, 80]):
     # Step 1: convert the noisy label and the third-party prediction to npy
     pred_prob_np = pred_prob_tensor.cpu().detach().numpy()
@@ -197,6 +198,7 @@ def MTCL_label_denoise(pred_prob_tensor, noisy_label_tensor, class_num=2, patch_
     print('successfully denoising')
     noise_map_tensor = torch.from_numpy(noise_map).cuda(pred_prob_tensor.device)
     return corrected_sam_label_tensor, noise_map_tensor
+
 
 def LogitClipping(logits, temp=1.0):
     delta = 1/temp
@@ -304,7 +306,6 @@ def train(args, snapshot_path):
             loss_ce = losses_sparse.CE_Mask_loss(outputs[:args.labeled_bs], cross_label[:args.labeled_bs][:], indicator[:args.labeled_bs][:], 
                                                  batch_size=args.labeled_bs, H=patch_size[0], W=patch_size[1], D=patch_size[2])
             # loss_ce = losses_sparse.CE_Mask_loss_multiclass(outputs[:args.labeled_bs], cross_label[:args.labeled_bs][:], indicator[:args.labeled_bs][:])
-            # loss_dice_labeled_slice = losses_sparse.binary_dice_loss_mask(outputs_soft[:args.labeled_bs], cross_label[:args.labeled_bs].unsqueeze(1), indicator[:args.labeled_bs].unsqueeze(1))
             supervised_loss = loss_ce
 
 
