@@ -36,7 +36,7 @@ Ensure CUDA compatibility with your system.
 
 1. Preparation
 - **Cross-labeling setup**: See [`./dataloaders/cross_labeling.py`](./code_GMABS/dataloaders/cross_labeling.py) for details.
-- **Generalist model weights**: Place pre-trained generalist models in `./sam_weights/`. Examples:
+- **Generalist model weights**: Place pre-trained generalist models in `./code_GMABS/sam_weights/`. Examples:
   - [MobileSAM weights](https://github.com/ChaoningZhang/MobileSAM/tree/master/weights)
   - [MedSAM / LiteMedSAM](https://drive.google.com/drive/folders/1ETWmi4AiniJeWOt6HAsYgTjYv_fkgzoN)
 
